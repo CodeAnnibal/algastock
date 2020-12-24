@@ -1,5 +1,6 @@
 import React from 'react';
-import Button from '../Button/Button';
+import Button from '../../shared/Button/Button';
+import Container from '../../shared/Container/Container';
 import Header from '../Header';
 import './App.css';
 
@@ -15,18 +16,13 @@ function App() {
   return (
     <div className="App">
       <Header title="AlgaStock"/>
-      <div className="Container">
-        <Button 
-          content="Click me" 
-          onClick={() => window.alert('asdadaw')}/>
-      </div>
-      <div className="Container">
+      <Container>
         <Button 
            onClick={() => window.alert('UIUIU')}
            appendIcon={<TestComponent />}>
              Alert
-           </Button>
-      </div>
+        </Button>
+      </Container>
     </div>
   );
 }
